@@ -47,6 +47,11 @@ type (
 		XMLName      xml.Name
 		NotBefore    string `xml:",attr"`
 		NotOnOrAfter string `xml:",attr"`
+		AudienceRestriction AudienceRestriction
+	}
+
+	AudienceRestriction struct {
+		Audience string `xml:"saml:Audience"`
 	}
 
 	AuthnStatement struct {
