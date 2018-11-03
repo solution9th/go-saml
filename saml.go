@@ -28,7 +28,7 @@ type ServiceProviderSettings struct {
 
 // ID generate a new V4 UUID
 func ID() string {
-	u := uuid.Must(uuid.NewV4())
+	u := uuid.NewV4()
 	return "_" + u.String()
 }
 
